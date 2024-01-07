@@ -24,7 +24,7 @@ app.post("/visit", async (c) => {
       city,
       flag,
     })
-    .sum(["visit"], 1n)
+    .sum(["visits"], 1n)
     .commit();
   return c.json({ message: "ok" });
 });
