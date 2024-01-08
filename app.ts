@@ -13,7 +13,7 @@ interface LastVisit {
 }
 
 app.use(cors())
-app.get("/", serveStatic({ path: "./index.html" }));
+app.get("/", serveStatic());
 
 app.post("/visit", async (c) => {
   const { city, flag, country } = await c.req.json<LastVisit>(); // Lo que tiene que parsear el json es la interface con strings
