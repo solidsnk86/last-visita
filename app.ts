@@ -40,7 +40,7 @@ app.get("/visit", (c) => {
           data: JSON.stringify(value),
           event: "update",
           id: String(i++),
-        }); // Pasarle la información del servidor al cliente no podemos pasar un número, siempre son strings en el data
+        }); // Para pasarle la información del servidor al cliente no podemos pasar un número en el data, siempre son strings
       }
     }
   });
